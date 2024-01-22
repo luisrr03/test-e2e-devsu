@@ -1,6 +1,6 @@
 describe('Visitando demoblaze', () => {
 
-  it('Deberia Agregar dos productos al carrito', () => {
+  it('Agregar dos productos al carrito', () => {
     cy.visit('https://www.demoblaze.com/')
     cy.contains('Samsung galaxy s6').click()
     cy.contains('Add to cart').click()
@@ -9,7 +9,7 @@ describe('Visitando demoblaze', () => {
     cy.contains('Add to cart').click()
   })
 
-  it('Deberia Visualizar carrito y verificar que existan los productos seleccionados', () => {
+  it('Visualizar carrito y los productos seleccionados', () => {
     cy.visit('https://www.demoblaze.com/')
     cy.contains('Samsung galaxy s6').click()
     cy.contains('Add to cart').click()
@@ -21,7 +21,7 @@ describe('Visitando demoblaze', () => {
     cy.contains('Nokia lumia 1520')
   })
 
-  it('Deberia completar el formulario de compra', () => {
+  it('completar el formulario de compra', () => {
     cy.visit('https://www.demoblaze.com/')
     cy.contains('Samsung galaxy s6').click()
     cy.contains('Add to cart').click()
@@ -41,7 +41,7 @@ describe('Visitando demoblaze', () => {
     cy.get('#year').type('2025')
   })
 
-  it('Deberia finalizar la compra', () => {
+  it('finalizar la compra', () => {
     cy.visit('https://www.demoblaze.com/')
     cy.contains('Samsung galaxy s6').click()
     cy.contains('Add to cart').click()
